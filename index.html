@@ -80,7 +80,24 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
+<head>
+  <style>
+    .hero-image {
+      position: relative;
+      overflow: hidden;
+      height: 100%; /* or set a specific height like 400px */
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+<!-- Hero Section -->
 <section id="hero" class="hero section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row align-items-center content">
@@ -111,7 +128,7 @@
       <div class="col-lg-6">
         <div class="hero-image">
           <video
-            src="assets/img/swinvidsample.mp4" <!-- Add your video source here -->
+            src="assets/img/swinvidsample.mp4"
             alt="Portfolio Hero Video"
             class="img-fluid"
             autoplay
@@ -130,159 +147,49 @@
 </section>
 <!-- /Hero Section -->
 
-
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-              <div class="about-content">
-                <span class="subtitle">About Us</span>
-
-                <h2></h2>
-
-                <p class="lead mb-4">
-                At AgriBlueprints Precision, we are dedicated to designing and 
-                constructing innovative, durable, and efficient animal housing 
-                solutions. As Agricultural and Biosystems Engineers, our goal is 
-                to enhance farm productivity, animal welfare, and sustainability 
-                through expert-driven blueprints and construction services.
-                </p>
-                <p class="lead mb-4">Providing precision-driven agricultural solutions since 2022.</p>
-
-
-                <div class="personal-info">
-                  <div class="row g-4">
-                    <div class="col-6">
-                      <div class="info-item">
-                        <span class="label"></span>
-                        <span class="value"></span>
-                      </div>
-                    </div>
-
-                    <div class="col-6">
-                      <div class="info-item">
-                        <span class="label"></span>
-                        <span class="value"></span>
-                      </div>
-                    </div>
-
-                    <div class="col-6">
-                      <div class="info-item">
-                        <span class="label"></span>
-                        <span class="value"></span>
-                      </div>
-                    </div>
-
-                    <div class="col-6">
-                      <div class="info-item">
-                        <span class="label"></span>
-                        <span class="value"
-                          ></span
-                        >
-                      </div>
-                    </div>
-
-                    <div class="col-6">
-                      <div class="info-item">
-                        <span class="label"></span>
-                        <span class="value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center" style="min-height: auto;">
+      <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="300">
+        <div class="about-content">
+          <span class="subtitle">About Us</span>
+          <p class="lead mb-4">
+            At AgriBlueprints Precision, we are dedicated to designing and 
+            constructing innovative, durable, and efficient animal housing 
+            solutions. As Agricultural and Biosystems Engineers, our goal is 
+            to enhance farm productivity, animal welfare, and sustainability 
+            through expert-driven blueprints and construction services.
+          </p>
+          <p class="lead mb-4">Providing precision-driven agricultural solutions since 2020.</p>
         </div>
-      </section>
-      <!-- /About Section -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /About Section -->
 
-      <!-- Skills Section -->
-      <section id="skills" class="skills section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-4 skills-animation">
-            <div
-              class="col-md-6 col-lg-3"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="skill-box">
-                <h3>Blueprint Design</h3>
-                <span class="text-end d-block">80%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
+<!-- Styles (CSS) -->
+<style>
+  /* Hero Section */
+  #hero {
+    padding-bottom: 30px; /* Reduces the bottom padding of the Hero Section */
+  }
 
-            <div
-              class="col-md-6 col-lg-3"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="skill-box">
-                <h3>Animal Housing Construction</h3>
-                <span class="text-end d-block">75%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
+  /* About Section */
+  #about {
+    margin-top: 20px; /* Reduces the top margin of the About Section */
+  }
 
-            <div
-              class="col-md-6 col-lg-3"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="skill-box">
-                <h3>Consultation & Site Planning</h3>
-                <span class="text-end d-block">90%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
+  /* Optional: To make sure the About Section is vertically centered */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
 
-            <div
-              class="col-md-6 col-lg-3"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="skill-box">
-                <h3>Infrastructure Development</h3>
-                <span class="text-end d-block">99%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="99"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Skills Section -->
 
 <section id="team" class="team section">
   <div class="container section-title" data-aos="fade-up">
